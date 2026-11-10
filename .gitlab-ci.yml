@@ -1,0 +1,39 @@
+stages:
+  - test
+  - package
+
+test:
+  stage: test
+  image: python:$PYTHON_VERSION-slim
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.11", "3.12"]
+  script:
+    - python -m pip install ".[dev]"
+    - python -m unittest discover -s tests -v
+    - python tools/check_schemas.py
+    - python tools/check_distribution.py --source .
+    - procedure-simplifier doctor
+    - procedure-simplifier export-framework /tmp/procedure-framework
+    - procedure-simplifier validate /tmp/procedure-framework/examples/demo/run.json
+
+package:
+  stage: package
+  image: python:3.12-slim
+  script:
+    - python -m pip install build
+    - python -m build
+    - python tools/check_distribution.py --archive dist/
+    - python -m venv /tmp/package-smoke
+    - /tmp/package-smoke/bin/python -m pip install --no-index dist/*.whl
+    - cd /tmp
+    - /tmp/package-smoke/bin/procedure-simplifier --version
+    - /tmp/package-smoke/bin/procedure-simplifier export-framework /tmp/installed-framework
+    - /tmp/package-smoke/bin/procedure-simplifier validate /tmp/installed-framework/examples/demo/run.json
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 30 days
+
+# Build artifacts only. There is no automatic push, registry upload, model call,
+# release publication or deployment job. Add publishing explicitly when needed.

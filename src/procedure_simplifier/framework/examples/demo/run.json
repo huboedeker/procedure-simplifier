@@ -1,0 +1,779 @@
+{
+  "schema_version": "0.2",
+  "run_id": "synthetic-demo",
+  "stage": "human_review",
+  "source": {
+    "title": "Synthetic shared-work routine",
+    "version": "1",
+    "sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+    "pages": [
+      1
+    ]
+  },
+  "brief": {
+    "objective": "Illustrate a complete structurally valid fixture",
+    "audience": "Example team",
+    "allowed_transformations": [
+      "language",
+      "presentation"
+    ],
+    "approval_status": "provisional",
+    "format": "Plain text"
+  },
+  "context": [
+    {
+      "id": "CTX01",
+      "text": "Entirely invented example; completed review metadata is fixture data, not an actual independent review."
+    }
+  ],
+  "units": [
+    {
+      "id": "I01",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "The routine keeps shared work clear and reviewable.",
+      "kind": "informative",
+      "actor": "Example team/owner as stated",
+      "force": "informative",
+      "protected_details": [
+        "The routine keeps shared work clear and reviewable."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R01",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "The team lead must record the routine and make it available to the team.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "The team lead must record the routine and make it available to the team."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R02",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Use a risk-based approach when updating a legacy workflow.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Use a risk-based approach when updating a legacy workflow."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R03",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Use and improve the routine as work needs change.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Use and improve the routine as work needs change."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R04",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "The team lead is responsible for the routine and its use.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "responsible",
+      "protected_details": [
+        "The team lead is responsible for the routine and its use."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R05",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "A separate checker must review changes that affect another team.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "A separate checker must review changes that affect another team."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R06",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Keep the routine current using objectives, feedback and relevant requirements.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Keep the routine current using objectives, feedback and relevant requirements."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R07",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Regularly check whether the routine is usable.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Regularly check whether the routine is usable."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R08",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Local teams must document the steps that are specific to them.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Local teams must document the steps that are specific to them."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R09",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "The checker must monitor whether those local steps are followed.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "The checker must monitor whether those local steps are followed."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R10",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Teams must retain evidence of compliance with their local steps.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Teams must retain evidence of compliance with their local steps."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R11",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Review the evidence periodically and investigate unexplained results.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Review the evidence periodically and investigate unexplained results."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R12",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Each work owner is responsible for applying the local steps.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "responsible",
+      "protected_details": [
+        "Each work owner is responsible for applying the local steps."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R13",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Use review findings and complaints to improve the routine.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Use review findings and complaints to improve the routine."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R14",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "The work owner must use the shared routine.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "The work owner must use the shared routine."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R15",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Plan and perform work according to the routine.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Plan and perform work according to the routine."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R16",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "Exceptions require approval by the routine owner.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "Exceptions require approval by the routine owner."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    },
+    {
+      "id": "R17",
+      "page": 1,
+      "section": "Synthetic routine",
+      "quote": "The routine owner must pass relevant lessons to the team.",
+      "kind": "mandatory",
+      "actor": "Example team/owner as stated",
+      "force": "must",
+      "protected_details": [
+        "The routine owner must pass relevant lessons to the team."
+      ],
+      "dependencies": [
+        "CTX01"
+      ],
+      "assessment": {
+        "outcome_contribution": "Fictional work coordination",
+        "protective_function": "Explicit ownership and feedback",
+        "burden": "Not measured",
+        "confidence": "Fixture only"
+      }
+    }
+  ],
+  "statements": [
+    {
+      "id": "SI01",
+      "text": "The routine keeps shared work clear and reviewable.",
+      "source_ids": [
+        "I01"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR01",
+      "text": "The team lead must record the routine and make it available to the team.",
+      "source_ids": [
+        "R01"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR02",
+      "text": "Use a risk-based approach when updating a legacy workflow.",
+      "source_ids": [
+        "R02"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR03",
+      "text": "Use and improve the routine as work needs change.",
+      "source_ids": [
+        "R03"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR04",
+      "text": "The team lead is responsible for the routine and its use.",
+      "source_ids": [
+        "R04"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR05",
+      "text": "A separate checker must review changes that affect another team.",
+      "source_ids": [
+        "R05"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR06",
+      "text": "Keep the routine current using objectives, feedback and relevant requirements.",
+      "source_ids": [
+        "R06"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR07",
+      "text": "Regularly check whether the routine is usable.",
+      "source_ids": [
+        "R07"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR08",
+      "text": "Local teams must document the steps that are specific to them.",
+      "source_ids": [
+        "R08"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR09",
+      "text": "The checker must monitor whether those local steps are followed.",
+      "source_ids": [
+        "R09"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR10",
+      "text": "Teams must retain evidence of compliance with their local steps.",
+      "source_ids": [
+        "R10"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR11",
+      "text": "Review the evidence periodically and investigate unexplained results.",
+      "source_ids": [
+        "R11"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR12",
+      "text": "Each work owner is responsible for applying the local steps.",
+      "source_ids": [
+        "R12"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR13",
+      "text": "Use review findings and complaints to improve the routine.",
+      "source_ids": [
+        "R13"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR14",
+      "text": "The work owner must use the shared routine.",
+      "source_ids": [
+        "R14"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR15",
+      "text": "Plan and perform work according to the routine.",
+      "source_ids": [
+        "R15"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR16",
+      "text": "Exceptions require approval by the routine owner.",
+      "source_ids": [
+        "R16"
+      ],
+      "addition": false
+    },
+    {
+      "id": "SR17",
+      "text": "The routine owner must pass relevant lessons to the team.",
+      "source_ids": [
+        "R17"
+      ],
+      "addition": false
+    }
+  ],
+  "changes": [
+    {
+      "unit_id": "I01",
+      "output_ids": [
+        "SI01"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R01",
+      "output_ids": [
+        "SR01"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R02",
+      "output_ids": [
+        "SR02"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R03",
+      "output_ids": [
+        "SR03"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R04",
+      "output_ids": [
+        "SR04"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R05",
+      "output_ids": [
+        "SR05"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R06",
+      "output_ids": [
+        "SR06"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R07",
+      "output_ids": [
+        "SR07"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R08",
+      "output_ids": [
+        "SR08"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R09",
+      "output_ids": [
+        "SR09"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R10",
+      "output_ids": [
+        "SR10"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R11",
+      "output_ids": [
+        "SR11"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R12",
+      "output_ids": [
+        "SR12"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R13",
+      "output_ids": [
+        "SR13"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R14",
+      "output_ids": [
+        "SR14"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R15",
+      "output_ids": [
+        "SR15"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R16",
+      "output_ids": [
+        "SR16"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    },
+    {
+      "unit_id": "R17",
+      "output_ids": [
+        "SR17"
+      ],
+      "disposition": "retained",
+      "transformation": "language",
+      "substantive": false,
+      "rationale": "Fixture retains source exactly; no reduction achieved or claimed.",
+      "approval_status": "proposed"
+    }
+  ],
+  "issues": [
+    {
+      "id": "Q01",
+      "status": "open",
+      "blocking": true,
+      "question": "Has an authorized owner accepted the example?",
+      "handling": "No; illustrative data only."
+    }
+  ],
+  "review": {
+    "status": "completed",
+    "reviewer": "Synthetic fixture: no actual reviewer or approval claimed",
+    "findings": []
+  },
+  "approvals": [],
+  "visual_review": {
+    "inventory_status": "complete",
+    "scope": "Synthetic text-only source on logical page1; no actual PDF inspection claimed",
+    "pages_inspected": [
+      1
+    ],
+    "issues": [],
+    "items": []
+  }
+}

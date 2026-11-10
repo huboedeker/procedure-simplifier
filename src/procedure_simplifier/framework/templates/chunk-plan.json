@@ -1,0 +1,17 @@
+{
+  "run_id": "",
+  "task_ref": "",
+  "shared_context_ref": "",
+  "capacity_basis": "",
+  "estimation_method": "",
+  "context_budget": {"window_tokens": null, "reserved_tokens": null, "safety_tokens": null},
+  "strategy": "",
+  "max_parallel": 1,
+  "host_parallel_capacity": null,
+  "source_element_ids": [],
+  "chunks": [],
+  "waves": [],
+  "merges": [],
+  "final_merge_id": "",
+  "global_review_plan": ""
+}

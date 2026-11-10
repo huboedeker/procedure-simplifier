@@ -1,0 +1,85 @@
+{
+  "objective": "Illustrate structurally valid records using invented content",
+  "audience": "Fictional example team",
+  "scope": "Synthetic routine on logical page1",
+  "mode": "structure",
+  "allowed_transformations": [
+    "language",
+    "presentation"
+  ],
+  "format": "Plain text; no reduction requested",
+  "non_negotiables": [
+    "No real approval or semantic review claimed"
+  ],
+  "success_criteria": [
+    "All fictional source IDs accounted for"
+  ],
+  "deliverables": [
+    "draft",
+    "changes",
+    "risk_assessment",
+    "review",
+    "validation",
+    "delivery",
+    "summary",
+    "learning",
+    "quality"
+  ],
+  "decisions": [
+    {
+      "id": "D01",
+      "choice": "Fictional demonstration only: plain wording, reorganized presentation, no consolidation/redesign/reduction, provided sources, material-gap clarification.",
+      "basis": "explicit_user",
+      "input_refs": [
+        "A00002"
+      ]
+    }
+  ],
+  "gaps": [],
+  "switches": {
+    "wording": {
+      "value": "plain",
+      "decision_ref": "D01"
+    },
+    "structure": {
+      "value": "reorganize",
+      "decision_ref": "D01"
+    },
+    "consolidation": {
+      "value": false,
+      "decision_ref": "D01"
+    },
+    "process_redesign": {
+      "value": false,
+      "decision_ref": "D01"
+    },
+    "requirement_reduction": {
+      "value": "none",
+      "decision_ref": "D01"
+    },
+    "format_fidelity": {
+      "value": "free",
+      "decision_ref": "D01"
+    },
+    "research": {
+      "value": "provided_only",
+      "decision_ref": "D01"
+    },
+    "clarification": {
+      "value": "material_gaps",
+      "decision_ref": "D01"
+    }
+  },
+  "output_role": "explanatory_companion",
+  "decision_owner": "Fictional example owner",
+  "adoption_authority": "Not established; no actual approval",
+  "framework_version": "0.8.0",
+  "skill_target": "Exported framework workspace",
+  "processing": {
+    "requested_strategy": "auto",
+    "selected_strategy": "single",
+    "max_parallel": 1,
+    "plan_ref": "synthetic-plan",
+    "capacity_check": "Synthetic fixture only"
+  }
+}

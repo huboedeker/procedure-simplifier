@@ -1,0 +1,16 @@
+{
+  "run_id": "",
+  "draft_ref": "",
+  "approach_ref": "",
+  "approach_summary": "",
+  "metrics": {
+    "status": "not_measured",
+    "reason": ""
+  },
+  "major_omissions": [],
+  "additions": [],
+  "risks": [],
+  "visual_status": "",
+  "review_status": "",
+  "limitations": []
+}

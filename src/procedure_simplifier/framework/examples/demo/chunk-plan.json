@@ -1,0 +1,75 @@
+{
+  "run_id": "synthetic-demo",
+  "task_ref": "synthetic-task",
+  "shared_context_ref": "synthetic-context",
+  "capacity_basis": "Invented test capacity; not a real model window",
+  "estimation_method": "Synthetic packet estimate for validation only",
+  "context_budget": {
+    "window_tokens": 2000,
+    "reserved_tokens": 800,
+    "safety_tokens": 300
+  },
+  "strategy": "single",
+  "max_parallel": 1,
+  "host_parallel_capacity": 1,
+  "source_element_ids": [
+    "I01",
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17"
+  ],
+  "chunks": [
+    {
+      "id": "C1",
+      "source_ref": "synthetic-source",
+      "task_ref": "synthetic-task",
+      "shared_context_ref": "synthetic-context",
+      "primary_ids": [
+        "I01",
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "read_only_ids": [],
+      "depends_on": [],
+      "boundary_rationale": "Entire invented text routine",
+      "packet_estimated_tokens": 600
+    }
+  ],
+  "waves": [
+    [
+      "C1"
+    ]
+  ],
+  "merges": [],
+  "final_merge_id": "C1",
+  "global_review_plan": "Fictional metadata; no global review actually performed"
+}

@@ -1,0 +1,21 @@
+{
+  "run_id": "",
+  "delivered_file": "",
+  "delivered_sha256": "",
+  "reviewed_statement_sha256": "",
+  "effective_task_artifact": "",
+  "independent_reviewer": "",
+  "completeness_status": "pending",
+  "source_manifest": [],
+  "scenarios": [],
+  "dependencies": [],
+  "reduction_cards": [],
+  "export_check": {
+    "status": "pending",
+    "evidence": ""
+  },
+  "open_issues": [],
+  "effective_task_file": "",
+  "effective_task_sha256": "",
+  "obligation_details": []
+}

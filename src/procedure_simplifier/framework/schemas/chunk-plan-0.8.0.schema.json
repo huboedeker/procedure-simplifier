@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:procedure-simplifier:chunk-plan-0.8.0.schema.json",
+  "title": "chunk-plan-0.8.0.schema.json",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shared_context_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "capacity_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estimation_method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context_budget": {
+      "type": "object",
+      "properties": {
+        "window_tokens": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "reserved_tokens": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "safety_tokens": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "window_tokens",
+        "reserved_tokens",
+        "safety_tokens"
+      ],
+      "additionalProperties": true
+    },
+    "strategy": {
+      "enum": [
+        "single",
+        "chunked_sequential",
+        "chunked_parallel"
+      ]
+    },
+    "max_parallel": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "host_parallel_capacity": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_element_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "task_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "shared_context_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "primary_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "read_only_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "boundary_rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "packet_estimated_tokens": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "id",
+          "source_ref",
+          "task_ref",
+          "shared_context_ref",
+          "primary_ids",
+          "read_only_ids",
+          "depends_on",
+          "boundary_rationale",
+          "packet_estimated_tokens"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "waves": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      },
+      "minItems": 1
+    },
+    "merges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "input_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "packet_estimated_tokens": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "id",
+          "input_ids",
+          "packet_estimated_tokens"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 0
+    },
+    "final_merge_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "global_review_plan": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "run_id",
+    "task_ref",
+    "shared_context_ref",
+    "capacity_basis",
+    "estimation_method",
+    "context_budget",
+    "strategy",
+    "max_parallel",
+    "host_parallel_capacity",
+    "source_element_ids",
+    "chunks",
+    "waves",
+    "merges",
+    "final_merge_id",
+    "global_review_plan"
+  ],
+  "additionalProperties": true
+}

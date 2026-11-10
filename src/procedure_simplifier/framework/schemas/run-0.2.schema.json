@@ -1,0 +1,475 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:procedure-simplifier:run-0.2.schema.json",
+  "title": "run-0.2.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.2"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "enum": [
+        "brief",
+        "analysis",
+        "clarification",
+        "draft",
+        "review",
+        "revision",
+        "human_review",
+        "approved"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "sha256"
+      ],
+      "additionalProperties": true
+    },
+    "brief": {
+      "type": "object",
+      "properties": {
+        "allowed_transformations": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "language",
+              "presentation",
+              "consolidation",
+              "process_redesign",
+              "requirement_reduction"
+            ]
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "allowed_transformations"
+      ],
+      "additionalProperties": true
+    },
+    "context": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "informative",
+              "recommendation",
+              "mandatory",
+              "domain_binding",
+              "permission",
+              "exception"
+            ]
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "force": {
+            "type": "string",
+            "minLength": 1
+          },
+          "protected_details": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "assessment": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "page",
+          "quote",
+          "kind",
+          "actor",
+          "force",
+          "protected_details",
+          "dependencies",
+          "assessment"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "statements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "addition": {
+            "type": "boolean"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "source_ids",
+          "addition"
+        ],
+        "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "addition": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "rationale"
+              ]
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "output_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "disposition": {
+            "enum": [
+              "retained",
+              "reworded",
+              "moved",
+              "merged",
+              "removed"
+            ]
+          },
+          "transformation": {
+            "enum": [
+              "language",
+              "presentation",
+              "consolidation",
+              "process_redesign",
+              "requirement_reduction"
+            ]
+          },
+          "substantive": {
+            "type": "boolean"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "approval_status": {
+            "enum": [
+              "proposed",
+              "approved",
+              "rejected"
+            ]
+          }
+        },
+        "required": [
+          "unit_id",
+          "output_ids",
+          "disposition",
+          "transformation",
+          "substantive",
+          "rationale",
+          "approval_status"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "completed"
+          ]
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "open",
+                  "resolved",
+                  "escalated"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "status"
+            ],
+            "additionalProperties": true
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "findings"
+      ],
+      "additionalProperties": true
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "visual_review": {
+      "type": "object",
+      "properties": {
+        "inventory_status": {
+          "enum": [
+            "pending",
+            "complete",
+            "incomplete"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pages_inspected": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 0
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "page": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1
+              },
+              "meaning": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_unit_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "source_artifact_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "disposition": {
+                "enum": [
+                  "retain",
+                  "revise",
+                  "replace",
+                  "remove"
+                ]
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "consistency": {
+                "enum": [
+                  "consistent",
+                  "conflict",
+                  "unresolved",
+                  "not_applicable"
+                ]
+              },
+              "production_status": {
+                "enum": [
+                  "proposed",
+                  "produced"
+                ]
+              },
+              "output_artifact_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "reviewed_text_sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "issue_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "id",
+              "page",
+              "kind",
+              "meaning",
+              "source_unit_ids",
+              "source_artifact_ids",
+              "disposition",
+              "rationale",
+              "consistency",
+              "production_status",
+              "output_artifact_ids",
+              "reviewed_text_sha256",
+              "issue_ids"
+            ],
+            "additionalProperties": true
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "inventory_status",
+        "scope",
+        "pages_inspected",
+        "issues",
+        "items"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "stage",
+    "source",
+    "brief",
+    "context",
+    "units",
+    "statements",
+    "changes",
+    "issues",
+    "review",
+    "approvals",
+    "visual_review"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,24 @@
+{
+  "chunk": {
+    "id": "",
+    "source_ref": "",
+    "task_ref": "",
+    "shared_context_ref": "",
+    "primary_ids": [],
+    "read_only_ids": [],
+    "depends_on": [],
+    "boundary_rationale": "",
+    "packet_estimated_tokens": null
+  },
+  "merge": {"id": "", "input_ids": [], "packet_estimated_tokens": null},
+  "worker_handoff": {
+    "chunk_id": "",
+    "role": "",
+    "task_ref": "",
+    "source_hashes": {},
+    "shared_context_ref": "",
+    "input_artifact_refs": [],
+    "output_directory": "",
+    "required_outputs": ["source_map", "draft_if_authorized", "changes", "risks", "visuals", "questions"]
+  }
+}

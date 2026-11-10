@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:procedure-simplifier:learning-0.8.0.schema.json",
+  "title": "learning-0.8.0.schema.json",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "feedback_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_skill_set": {
+      "type": "string",
+      "minLength": 1
+    },
+    "overall_disposition": {
+      "enum": [
+        "applied",
+        "deferred",
+        "rejected",
+        "no_change",
+        "mixed"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "run_id",
+    "feedback_basis",
+    "target_skill_set",
+    "overall_disposition",
+    "reason",
+    "candidates"
+  ],
+  "additionalProperties": true
+}

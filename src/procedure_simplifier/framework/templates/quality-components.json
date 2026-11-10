@@ -1,0 +1,56 @@
+{
+  "manifest_block": {
+    "id": "",
+    "source_file": "",
+    "source_sha256": "",
+    "locator": "",
+    "expected_content": "",
+    "unit_ids": [],
+    "disposition": "mapped"
+  },
+  "obligation_detail": {
+    "unit_id": "",
+    "actor": "",
+    "action": "",
+    "force": "",
+    "trigger": "",
+    "scope": "",
+    "exceptions": "",
+    "timing": "",
+    "evidence": "",
+    "authority": ""
+  },
+  "scenario": {
+    "id": "",
+    "unit_ids": [],
+    "situation": "",
+    "source_behavior": "",
+    "output_behavior": "",
+    "verdict": "",
+    "evidence": ""
+  },
+  "dependency": {
+    "id": "",
+    "direction": "",
+    "source": "",
+    "version": "",
+    "status": "",
+    "impact": ""
+  },
+  "reduction_card": {
+    "id": "",
+    "unit_ids": [],
+    "benefit_hypothesis": "",
+    "basis": "",
+    "evidence_or_assumption": "",
+    "lost_safeguard": "",
+    "affected_parties": "",
+    "dependency_impact": "",
+    "replacement": "",
+    "owner": "",
+    "burden_shift": "",
+    "disproof_test": "",
+    "risk_and_confidence": "",
+    "decision": ""
+  }
+}

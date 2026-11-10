@@ -1,0 +1,32 @@
+# Local documents, case evidence and credentials
+/runs/
+/work/
+/inputs/
+/outputs/
+*.pdf
+*.docx
+*.xlsx
+*.png
+*.jpg
+*.jpeg
+*.zip
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python/build/editor output
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/

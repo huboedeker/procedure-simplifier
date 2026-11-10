@@ -1,0 +1,80 @@
+{
+  "objective": "",
+  "audience": "",
+  "scope": "",
+  "mode": "structure",
+  "allowed_transformations": [
+    "language",
+    "presentation",
+    "consolidation"
+  ],
+  "format": "",
+  "non_negotiables": [],
+  "success_criteria": [],
+  "deliverables": [
+    "draft",
+    "changes",
+    "risk_assessment",
+    "review",
+    "validation",
+    "delivery",
+    "summary",
+    "learning",
+    "quality"
+  ],
+  "decisions": [
+    {
+      "id": "D01",
+      "choice": "",
+      "basis": "explicit_user",
+      "input_refs": []
+    }
+  ],
+  "gaps": [],
+  "switches": {
+    "wording": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "structure": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "consolidation": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "process_redesign": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "requirement_reduction": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "format_fidelity": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "research": {
+      "value": null,
+      "decision_ref": ""
+    },
+    "clarification": {
+      "value": null,
+      "decision_ref": ""
+    }
+  },
+  "output_role": "",
+  "decision_owner": "",
+  "adoption_authority": "",
+  "framework_version": "0.8.0",
+  "skill_target": "",
+  "processing": {
+    "requested_strategy": "auto",
+    "selected_strategy": null,
+    "max_parallel": 1,
+    "plan_ref": "",
+    "capacity_check": "pending"
+  }
+}

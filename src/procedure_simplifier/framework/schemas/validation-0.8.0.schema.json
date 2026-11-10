@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:procedure-simplifier:validation-0.8.0.schema.json",
+  "title": "validation-0.8.0.schema.json",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "draft_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approach_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "passed",
+              "failed",
+              "incomplete"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "name",
+          "status",
+          "evidence"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "run_id",
+    "draft_ref",
+    "approach_ref",
+    "checks"
+  ],
+  "additionalProperties": true
+}

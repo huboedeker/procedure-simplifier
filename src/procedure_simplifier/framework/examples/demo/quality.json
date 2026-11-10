@@ -1,0 +1,439 @@
+{
+  "run_id": "synthetic-demo",
+  "delivered_file": "output.md",
+  "delivered_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+  "reviewed_statement_sha256": "00844053957e087090e4cf5679114ff344c8c03489a71bd035347080100e521f",
+  "effective_task_artifact": "synthetic-task",
+  "effective_task_file": "approach.json",
+  "effective_task_sha256": "aa57984ecc27b602b7a644d3b8d79730fe892304f2517677053c69ff26f9ff83",
+  "independent_reviewer": "Synthetic fixture metadata; no actual review",
+  "completeness_status": "complete",
+  "source_manifest": [
+    {
+      "id": "I01",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, I01",
+      "expected_content": "The routine keeps shared work clear and reviewable.",
+      "unit_ids": [
+        "I01"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R01",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R01",
+      "expected_content": "The team lead must record the routine and make it available to the team.",
+      "unit_ids": [
+        "R01"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R02",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R02",
+      "expected_content": "Use a risk-based approach when updating a legacy workflow.",
+      "unit_ids": [
+        "R02"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R03",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R03",
+      "expected_content": "Use and improve the routine as work needs change.",
+      "unit_ids": [
+        "R03"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R04",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R04",
+      "expected_content": "The team lead is responsible for the routine and its use.",
+      "unit_ids": [
+        "R04"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R05",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R05",
+      "expected_content": "A separate checker must review changes that affect another team.",
+      "unit_ids": [
+        "R05"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R06",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R06",
+      "expected_content": "Keep the routine current using objectives, feedback and relevant requirements.",
+      "unit_ids": [
+        "R06"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R07",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R07",
+      "expected_content": "Regularly check whether the routine is usable.",
+      "unit_ids": [
+        "R07"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R08",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R08",
+      "expected_content": "Local teams must document the steps that are specific to them.",
+      "unit_ids": [
+        "R08"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R09",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R09",
+      "expected_content": "The checker must monitor whether those local steps are followed.",
+      "unit_ids": [
+        "R09"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R10",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R10",
+      "expected_content": "Teams must retain evidence of compliance with their local steps.",
+      "unit_ids": [
+        "R10"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R11",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R11",
+      "expected_content": "Review the evidence periodically and investigate unexplained results.",
+      "unit_ids": [
+        "R11"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R12",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R12",
+      "expected_content": "Each work owner is responsible for applying the local steps.",
+      "unit_ids": [
+        "R12"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R13",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R13",
+      "expected_content": "Use review findings and complaints to improve the routine.",
+      "unit_ids": [
+        "R13"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R14",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R14",
+      "expected_content": "The work owner must use the shared routine.",
+      "unit_ids": [
+        "R14"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R15",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R15",
+      "expected_content": "Plan and perform work according to the routine.",
+      "unit_ids": [
+        "R15"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R16",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R16",
+      "expected_content": "Exceptions require approval by the routine owner.",
+      "unit_ids": [
+        "R16"
+      ],
+      "disposition": "mapped"
+    },
+    {
+      "id": "R17",
+      "source_file": "source.txt",
+      "source_sha256": "4cdc405f4d652d665b7c47a6bc506676cc76987f8b8641e8de23524a3a82e9aa",
+      "locator": "Synthetic text, logical page1, R17",
+      "expected_content": "The routine owner must pass relevant lessons to the team.",
+      "unit_ids": [
+        "R17"
+      ],
+      "disposition": "mapped"
+    }
+  ],
+  "obligation_details": [
+    {
+      "unit_id": "R01",
+      "actor": "Example team/owner as stated",
+      "action": "The team lead must record the routine and make it available to the team.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R02",
+      "actor": "Example team/owner as stated",
+      "action": "Use a risk-based approach when updating a legacy workflow.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R03",
+      "actor": "Example team/owner as stated",
+      "action": "Use and improve the routine as work needs change.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R04",
+      "actor": "Example team/owner as stated",
+      "action": "The team lead is responsible for the routine and its use.",
+      "force": "responsible",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R05",
+      "actor": "Example team/owner as stated",
+      "action": "A separate checker must review changes that affect another team.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R06",
+      "actor": "Example team/owner as stated",
+      "action": "Keep the routine current using objectives, feedback and relevant requirements.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R07",
+      "actor": "Example team/owner as stated",
+      "action": "Regularly check whether the routine is usable.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R08",
+      "actor": "Example team/owner as stated",
+      "action": "Local teams must document the steps that are specific to them.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R09",
+      "actor": "Example team/owner as stated",
+      "action": "The checker must monitor whether those local steps are followed.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R10",
+      "actor": "Example team/owner as stated",
+      "action": "Teams must retain evidence of compliance with their local steps.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R11",
+      "actor": "Example team/owner as stated",
+      "action": "Review the evidence periodically and investigate unexplained results.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R12",
+      "actor": "Example team/owner as stated",
+      "action": "Each work owner is responsible for applying the local steps.",
+      "force": "responsible",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R13",
+      "actor": "Example team/owner as stated",
+      "action": "Use review findings and complaints to improve the routine.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R14",
+      "actor": "Example team/owner as stated",
+      "action": "The work owner must use the shared routine.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R15",
+      "actor": "Example team/owner as stated",
+      "action": "Plan and perform work according to the routine.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R16",
+      "actor": "Example team/owner as stated",
+      "action": "Exceptions require approval by the routine owner.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    },
+    {
+      "unit_id": "R17",
+      "actor": "Example team/owner as stated",
+      "action": "The routine owner must pass relevant lessons to the team.",
+      "force": "must",
+      "trigger": "Using the fictional routine",
+      "scope": "Fictional page1",
+      "exceptions": "Not specified in fixture",
+      "timing": "As specified; otherwise unknown",
+      "evidence": "Invented source text, not a real procedure",
+      "authority": "No actual authority"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "SC1",
+      "unit_ids": [
+        "R16"
+      ],
+      "situation": "Fictional exception request",
+      "source_behavior": "Routine-owner approval required",
+      "output_behavior": "Routine-owner approval required",
+      "verdict": "match",
+      "evidence": "Pre-authored fixture comparison, not an observed reader test"
+    }
+  ],
+  "dependencies": [],
+  "reduction_cards": [],
+  "export_check": {
+    "status": "passed",
+    "evidence": "Synthetic text fixture; no real document/render review claimed"
+  },
+  "open_issues": [
+    "Q01: no human approval or real semantic evaluation"
+  ]
+}

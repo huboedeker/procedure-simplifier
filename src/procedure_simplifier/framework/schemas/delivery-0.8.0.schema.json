@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:procedure-simplifier:delivery-0.8.0.schema.json",
+  "title": "delivery-0.8.0.schema.json",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "draft_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approach_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "proposal",
+        "approved"
+      ]
+    },
+    "artifact_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "open_issues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "run_id",
+    "draft_ref",
+    "approach_ref",
+    "status",
+    "artifact_refs",
+    "open_issues"
+  ],
+  "additionalProperties": true
+}

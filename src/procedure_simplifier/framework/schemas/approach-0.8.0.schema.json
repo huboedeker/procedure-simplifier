@@ -1,0 +1,336 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:procedure-simplifier:approach-0.8.0.schema.json",
+  "title": "approach-0.8.0.schema.json",
+  "type": "object",
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audience": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "language",
+        "structure",
+        "outcome"
+      ]
+    },
+    "allowed_transformations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "format": {
+      "type": "string",
+      "minLength": 1
+    },
+    "non_negotiables": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "success_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "choice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "enum": [
+              "explicit_user",
+              "authorized_default"
+            ]
+          },
+          "input_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "choice",
+          "basis",
+          "input_refs"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "switches": {
+      "type": "object",
+      "properties": {
+        "wording": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                "retain",
+                "plain",
+                "condensed"
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "structure": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                "preserve",
+                "reorganize",
+                "free"
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "consolidation": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                false,
+                true
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "process_redesign": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                false,
+                true
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "requirement_reduction": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                "none",
+                "evidence_based",
+                "assumption_based"
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "format_fidelity": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                "preserve",
+                "adapt",
+                "free"
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "research": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                "provided_only",
+                "approved_internal",
+                "public_and_approved_internal"
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        },
+        "clarification": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "enum": [
+                "material_gaps",
+                "stage_checkpoints"
+              ]
+            },
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "decision_ref"
+          ],
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "wording",
+        "structure",
+        "consolidation",
+        "process_redesign",
+        "requirement_reduction",
+        "format_fidelity",
+        "research",
+        "clarification"
+      ],
+      "additionalProperties": false
+    },
+    "output_role": {
+      "enum": [
+        "explanatory_companion",
+        "proposed_replacement",
+        "formal_amendment"
+      ]
+    },
+    "decision_owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adoption_authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "framework_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "skill_target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "processing": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "objective",
+    "audience",
+    "scope",
+    "mode",
+    "allowed_transformations",
+    "format",
+    "non_negotiables",
+    "success_criteria",
+    "deliverables",
+    "decisions",
+    "gaps",
+    "switches",
+    "output_role",
+    "decision_owner",
+    "adoption_authority",
+    "framework_version",
+    "skill_target",
+    "processing"
+  ],
+  "additionalProperties": true
+}
